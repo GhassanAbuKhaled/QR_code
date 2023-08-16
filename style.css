@@ -1,0 +1,142 @@
+:root {
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-LightGray: hsl(212, 45%, 89%);
+    --clr-GrayishBlue: hsl(220, 15%, 55%);
+    --clr-DarkBlue: hsl(218, 44%, 22%);
+
+    --ff-primary: 'Outfit', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-300: 15px;
+    --fs-700: 22px;
+
+    --opacity: 0.6;
+
+    --border-radius-100: 16px;
+
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* general styling */
+
+body {
+    background-color: var(--clr-LightGray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-primary);
+}
+
+
+.grid {
+
+    --max-width: 340px;
+    --container-padding: 2rem;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 550px;
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    padding: min(1.2rem, 2%);
+    border: 0;
+    background-color: var(--clr-white);
+}
+
+.grid img {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.border-radius-100 {
+    border-radius: var(--border-radius-100);
+}
+
+/* Utility classes */
+.padding-block-400 {
+    padding-block: var(--size-400);
+}
+
+.padding-inline-300 {
+    padding-inline: var(--size-300);
+}
+.padding-inline-400 {
+    padding-inline: var(--size-400);
+}
+
+.padding-inline-600 {
+    padding-inline: var(--size-600);
+}
+
+.padding-inline-700 {
+    padding-inline: var(--size-700);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.opacity {
+    opacity: var(--opacity);
+}
